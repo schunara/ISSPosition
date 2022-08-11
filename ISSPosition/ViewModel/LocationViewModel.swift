@@ -24,6 +24,7 @@ class LocationViewModel: NSObject {
     override init() {
         super.init()
         self.location = nil
+        callAPIToGetLocation()
         timer = Timer.scheduledTimer(
             withTimeInterval: 3.0,
             repeats: true,
