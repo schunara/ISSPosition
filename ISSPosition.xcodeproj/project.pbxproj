@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		1E8FC66628A49FA000729377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8FC66528A49FA000729377 /* AppDelegate.swift */; };
 		1E8FC66828A49FA000729377 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8FC66728A49FA000729377 /* SceneDelegate.swift */; };
-		1E8FC66A28A49FA000729377 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8FC66928A49FA000729377 /* ViewController.swift */; };
+		1E8FC66A28A49FA000729377 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8FC66928A49FA000729377 /* LocationViewController.swift */; };
 		1E8FC66D28A49FA000729377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E8FC66B28A49FA000729377 /* Main.storyboard */; };
 		1E8FC67028A49FA000729377 /* ISSPosition.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E8FC66E28A49FA000729377 /* ISSPosition.xcdatamodeld */; };
 		1E8FC67228A49FAD00729377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E8FC67128A49FAD00729377 /* Assets.xcassets */; };
 		1E8FC67528A49FAD00729377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E8FC67328A49FAD00729377 /* LaunchScreen.storyboard */; };
 		1E8FC68028A49FAE00729377 /* ISSPositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8FC67F28A49FAE00729377 /* ISSPositionTests.swift */; };
 		1E8FC68B28A49FAE00729377 /* ISSPositionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8FC68A28A49FAE00729377 /* ISSPositionUITests.swift */; };
+		1E8FC6A828A4A5A500729377 /* APIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8FC6A728A4A5A500729377 /* APIService.m */; };
+		1E8FC6A928A4A5A500729377 /* APIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8FC6A728A4A5A500729377 /* APIService.m */; };
+		1E8FC6AE28A4B3DD00729377 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8FC6AD28A4B3DD00729377 /* Location.swift */; };
+		1E8FC6AF28A4B3DD00729377 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8FC6AD28A4B3DD00729377 /* Location.swift */; };
+		1E8FC6B428A5419600729377 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8FC6B328A5419600729377 /* LocationViewModel.swift */; };
+		1E8FC6B528A5419600729377 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8FC6B328A5419600729377 /* LocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,7 @@
 		1E8FC66228A49FA000729377 /* ISSPosition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISSPosition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E8FC66528A49FA000729377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E8FC66728A49FA000729377 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1E8FC66928A49FA000729377 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E8FC66928A49FA000729377 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		1E8FC66C28A49FA000729377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E8FC66F28A49FA000729377 /* ISSPosition.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ISSPosition.xcdatamodel; sourceTree = "<group>"; };
 		1E8FC67128A49FAD00729377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +57,12 @@
 		1E8FC68628A49FAE00729377 /* ISSPositionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISSPositionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E8FC68A28A49FAE00729377 /* ISSPositionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPositionUITests.swift; sourceTree = "<group>"; };
 		1E8FC68C28A49FAE00729377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E8FC6A428A4A5A500729377 /* ISSPosition-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ISSPosition-Bridging-Header.h"; sourceTree = "<group>"; };
+		1E8FC6A528A4A5A500729377 /* ISSPositionTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ISSPositionTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		1E8FC6A628A4A5A500729377 /* APIService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIService.h; sourceTree = "<group>"; };
+		1E8FC6A728A4A5A500729377 /* APIService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIService.m; sourceTree = "<group>"; };
+		1E8FC6AD28A4B3DD00729377 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		1E8FC6B328A5419600729377 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +113,11 @@
 		1E8FC66428A49FA000729377 /* ISSPosition */ = {
 			isa = PBXGroup;
 			children = (
-				1E8FC66528A49FA000729377 /* AppDelegate.swift */,
-				1E8FC66728A49FA000729377 /* SceneDelegate.swift */,
-				1E8FC66928A49FA000729377 /* ViewController.swift */,
+				1E8FC6A328A4A46F00729377 /* Webservice */,
+				1E8FC69E28A4A33700729377 /* Common */,
+				1E8FC69D28A4A2F200729377 /* ViewModel */,
+				1E8FC69C28A4A2EA00729377 /* Model */,
+				1E8FC69B28A4A2E100729377 /* Controller */,
 				1E8FC66B28A49FA000729377 /* Main.storyboard */,
 				1E8FC67128A49FAD00729377 /* Assets.xcassets */,
 				1E8FC67328A49FAD00729377 /* LaunchScreen.storyboard */,
@@ -129,6 +143,50 @@
 				1E8FC68C28A49FAE00729377 /* Info.plist */,
 			);
 			path = ISSPositionUITests;
+			sourceTree = "<group>";
+		};
+		1E8FC69B28A4A2E100729377 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E8FC66928A49FA000729377 /* LocationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E8FC69C28A4A2EA00729377 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E8FC6AD28A4B3DD00729377 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1E8FC69D28A4A2F200729377 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1E8FC6B328A5419600729377 /* LocationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1E8FC69E28A4A33700729377 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1E8FC66528A49FA000729377 /* AppDelegate.swift */,
+				1E8FC66728A49FA000729377 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1E8FC6A328A4A46F00729377 /* Webservice */ = {
+			isa = PBXGroup;
+			children = (
+				1E8FC6A628A4A5A500729377 /* APIService.h */,
+				1E8FC6A728A4A5A500729377 /* APIService.m */,
+				1E8FC6A428A4A5A500729377 /* ISSPosition-Bridging-Header.h */,
+				1E8FC6A528A4A5A500729377 /* ISSPositionTests-Bridging-Header.h */,
+			);
+			path = Webservice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +256,11 @@
 				TargetAttributes = {
 					1E8FC66128A49FA000729377 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					1E8FC67A28A49FAE00729377 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = 1E8FC66128A49FA000729377;
 					};
 					1E8FC68528A49FAE00729377 = {
@@ -262,8 +322,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E8FC67028A49FA000729377 /* ISSPosition.xcdatamodeld in Sources */,
-				1E8FC66A28A49FA000729377 /* ViewController.swift in Sources */,
+				1E8FC6A828A4A5A500729377 /* APIService.m in Sources */,
+				1E8FC66A28A49FA000729377 /* LocationViewController.swift in Sources */,
 				1E8FC66628A49FA000729377 /* AppDelegate.swift in Sources */,
+				1E8FC6B428A5419600729377 /* LocationViewModel.swift in Sources */,
+				1E8FC6AE28A4B3DD00729377 /* Location.swift in Sources */,
 				1E8FC66828A49FA000729377 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +335,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E8FC6A928A4A5A500729377 /* APIService.m in Sources */,
+				1E8FC6AF28A4B3DD00729377 /* Location.swift in Sources */,
 				1E8FC68028A49FAE00729377 /* ISSPositionTests.swift in Sources */,
+				1E8FC6B528A5419600729377 /* LocationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ISSPosition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -448,6 +515,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com..ISSPosition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ISSPosition/Webservice/ISSPosition-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,6 +527,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ISSPosition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -466,6 +536,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com..ISSPosition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ISSPosition/Webservice/ISSPosition-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -476,6 +547,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ISSPositionTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -486,6 +558,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com..ISSPositionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ISSPosition/Webservice/ISSPositionTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ISSPosition.app/ISSPosition";
@@ -497,6 +571,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ISSPositionTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -507,6 +582,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com..ISSPositionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ISSPosition/Webservice/ISSPositionTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ISSPosition.app/ISSPosition";
